@@ -15,7 +15,7 @@
 
 - create .emacs  in your home folder.
 - add following to this file:
-
+```
 '(require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
                     (not (gnutls-available-p))))
@@ -30,7 +30,7 @@
 ;; Setting lisp system
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
 (setq slime-contribs '(slime-fancy))'
-
+```
 4. Clone this repo
 5. In Emacs, open slime 
 4. 
