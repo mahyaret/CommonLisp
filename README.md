@@ -16,7 +16,7 @@
 - create .emacs  in your home folder.
 - add following to this file:
 ```
-'(require 'package)
+(require 'package)
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
                     (not (gnutls-available-p))))
        (proto (if no-ssl "http" "https")))
@@ -29,8 +29,22 @@
 (package-initialize)
 ;; Setting lisp system
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
-(setq slime-contribs '(slime-fancy))'
+(setq slime-contribs '(slime-fancy))
 ```
+and then restart emacs and run the following:
+```
+M-x package-refresh-contents
+M-x package-install RET slime RET
+```
+
 4. Clone this repo
 5. In Emacs, open slime 
-4. 
+```
+M-x slime
+```
+and if you want to exit from slime:
+```
+, sayoonara
+```
+
+Best resource for Common Lisp can be found here: https://github.com/norvig/paip-lisp
