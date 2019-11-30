@@ -42,9 +42,14 @@ M-x package-install RET slime RET
 ```
 M-x slime
 ```
-and if you want to exit from slime:
+SLIME starts the Lisp system with the current directory taken from the directory where the file associated with the current buffer is. If you want to exit from slime:
 ```
 , sayoonara
 ```
+6. In slime REPL run:
+```
+(load "Tester.lisp")
+```
 
+### For Help
 Best resource for Common Lisp can be found here: https://github.com/norvig/paip-lisp

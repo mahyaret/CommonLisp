@@ -1,0 +1,8 @@
+(load "Question.lisp")
+(defvar str1)
+(defvar str2)
+(setq str1 "abcd")
+(setq str2 "aabcd")
+(format t "Are ~A and ~A permutation?~B~%" str1 str2 (isPermutation str1 str2))
+(format t "Are ~A and ~A permutation?~B~%" str2 str2 (isPermutation str2 str2))
+(write t)
