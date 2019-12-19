@@ -1,16 +1,26 @@
 
 ### How to run the code
 
+I personally found the combination of Emacs and Slime on top of SBCL gives the best IDE for common Lisp.  
+
 **With Emacs+Slime+SBCL**
 1. Install Emacs using the following
 
-- sudo apt-get install emacs
- 
-2. Install SBCL
+**Linux:**
+```
+sudo apt-get install emacs
+```
+
+**Windows & MacOS:**
+
+https://www.gnu.org/software/emacs/download.html
+
+2. Install SBCL (also on Windows and MacOS)
 
 - download from here: http://www.sbcl.org/platform-table.html
-- sudo ./install.sh
-
+```
+sudo ./install.sh
+```
 3. Setup Slime in Emacs
 
 - create .emacs  in your home folder.
