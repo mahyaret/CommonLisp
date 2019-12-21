@@ -1,0 +1,13 @@
+(load "Question.lisp")
+(setq a (make-array '(4 4)))
+(defvar c)
+(setq c 1)
+(dotimes (i 4)
+   (dotimes (j 4)
+     (progn
+       (setf (aref a i j) c)
+       (setq c (+ c 1))
+       )
+   )
+   )
+(rotate a)
