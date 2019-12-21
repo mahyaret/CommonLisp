@@ -1,5 +1,15 @@
+# CtCI-6th-Edition
+Solutions for [Cracking the Coding Interview 6th Edition](http://www.amazon.com/Cracking-Coding-Interview-6th-Edition/dp/0984782850) by [Gayle Laakmann McDowell](http://www.gayle.com/).
 
-### How to run the code
+## Contributing
+
+### Work Flow
+1. Fork the appropriate repo for your language to your GitHub user.
+2. Write quality code and lint if applicable.
+3. Add tests if applicable.
+4. Open a pull request and provide a descriptive comment for what you did.
+
+## How to run the code
 
 I personally found the combination of Emacs and Slime on top of SBCL gives the best IDE for common Lisp.  
 
